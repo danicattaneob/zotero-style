@@ -168,7 +168,7 @@
   <macro name="contributors">
     <group>
       <names variable="author" font-variant="normal" suffix=", ">
-        <name font-variant="small-caps" and="text" et-al-use-first="3" initialize-with=". " name-as-sort-order="all"/>
+        <name font-variant="small-caps" and="text" et-al-use-first="3"  name-as-sort-order="all"/>
         <label/>
         <substitute>
           <text macro="editor"/>
