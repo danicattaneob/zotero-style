@@ -399,7 +399,7 @@
             </group>
           </if>
           <else>
-            <text variable="edition" suffix=" "/>
+            <text variable="edition" suffix=", "/>
           </else>
         </choose>
       </if>
@@ -412,7 +412,7 @@
           <if is-numeric="edition">
             <group delimiter=" ">
               <number variable="edition"/>
-              <text term="edition" form="short" suffix=" "/>
+              <text term="edition" form="short" suffix=", "/>
             </group>
           </if>
           <else>
@@ -865,10 +865,10 @@
       <else-if type="article-journal entry-dictionary entry-encyclopedia" match="any">
         <choose>
           <if variable="issue volume" match="any">
-            <text macro="issued" prefix="(" suffix=")"/>
+            <text macro="issued" prefix="(" suffix="), "/>
           </if>
           <else>
-            <text macro="issued" prefix="(" suffix=")"/>
+            <text macro="issued" prefix="(" suffix="), "/>
           </else>
         </choose>
       </else-if>
