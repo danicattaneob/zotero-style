@@ -126,7 +126,8 @@
   <macro name="contributors-note">
     <group delimiter=" ">
       <names variable="author" font-variant="normal">
-        <name font-variant="small-caps" and="text" et-al-subsequent-min="2" et-al-subsequent-use-first="2" name-as-sort-order="all"/>
+        <name font-variant="normal" and="text" et-al-subsequent-min="2" et-al-subsequent-use-first="2" name-as-sort-order="all"/>
+        <name-part name="family" font-variant="small-caps"/>
         <label form="short" prefix=" (" suffix=")"/>
         <substitute>
           <names variable="editor"/>
@@ -168,7 +169,8 @@
   <macro name="contributors">
     <group>
       <names variable="author" font-variant="normal" suffix=", ">
-        <name font-variant="small-caps" and="text" et-al-use-first="3"  name-as-sort-order="all"/>
+        <name font-variant="normal" and="text" et-al-subsequent-min="2" et-al-subsequent-use-first="2" name-as-sort-order="all"/>
+        <name-part name="family" font-variant="small-caps"/>
         <label/>
         <substitute>
           <text macro="editor"/>
